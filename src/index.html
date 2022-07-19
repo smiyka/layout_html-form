@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-      autocomplete="on"
     >
-      <fieldset>
+      <fieldset  class="fieldset">
         <legend>Personal information</legend>
         <label for="surname" class="form-field">
           Surname:
@@ -27,6 +25,7 @@
             name="surname" 
             id="surname"
             autocomplete="off"
+            required
           >
         </label>
         <label class="form-field" for="name">
@@ -37,6 +36,7 @@
             id="name"
             maxlength="32"
             autocomplete="off"
+            required
           >
         </label>
         <label for="age"  class="form-field">
@@ -67,7 +67,7 @@
           >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset  class="fieldset">
         <legend>Registration</legend>
         <label for="mail"  class="form-field">
           E-mail:
@@ -90,7 +90,7 @@
           >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset  class="fieldset">
         <legend>An interesting fact about you!</legend>
         <label for="fact2"  class="form-field">
           Do you love cats?
@@ -101,10 +101,10 @@
           >
           Yes
           <input 
-          type="radio"
-          name="yes/no"
+            type="radio"
+            name="yes/no"
           >
-          No
+            No
         </label>
         <label for="fact1"  class="form-field">
           What is your favorite color?
@@ -146,7 +146,7 @@
           >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
         <label for="comments" class="form-field">
           Comments:
@@ -168,14 +168,8 @@
             <option value="recommend_no">no</option>
           </select>
         </label>
-
       </fieldset>
-      <button
-        type="submit"
-        class="button"
-      >
-        Submit
-      </button>
+      <button type="submit" class="form-field">Submit</button>
     </form>
   </body>
 </html>
